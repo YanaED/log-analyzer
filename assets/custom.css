@@ -1,0 +1,139 @@
+/* Палитра сайта: #687864, #31708E, #5085A5, #8FC1E3, #F7F9FB */
+
+:root {
+  --color-dark: #687864;
+  --color-primary: #31708E;
+  --color-medium: #5085A5;
+  --color-light: #8FC1E3;
+  --color-bg: #F7F9FB;
+}
+
+/* Страница по высоте окна, скролл при переполнении */
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+  background-color: var(--color-bg) !important;
+}
+
+/* Область контента вкладок — ограничена по высоте окна, при переполнении появляется скролл */
+.tab-content {
+  max-height: calc(100vh - 220px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bg-primary, .btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+.btn-primary:hover {
+  background-color: var(--color-medium) !important;
+  border-color: var(--color-medium) !important;
+}
+
+.btn-info, .bg-info {
+  background-color: var(--color-light) !important;
+  border-color: var(--color-light) !important;
+  color: #1a1a1a !important;
+}
+.btn-info:hover {
+  background-color: var(--color-medium) !important;
+  border-color: var(--color-medium) !important;
+  color: #fff !important;
+}
+
+.bg-secondary, .btn-secondary {
+  background-color: var(--color-medium) !important;
+  border-color: var(--color-medium) !important;
+}
+.bg-secondary.text-white .card-header {
+  background-color: var(--color-medium) !important;
+}
+
+.bg-success, .btn-success {
+  background-color: var(--color-dark) !important;
+  border-color: var(--color-dark) !important;
+}
+.btn-success:hover {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+
+.bg-info.text-white .card-header,
+.card-header.bg-info {
+  background-color: var(--color-light) !important;
+  color: #1a1a1a !important;
+}
+
+.bg-warning {
+  background-color: var(--color-light) !important;
+  color: #1a1a1a !important;
+}
+
+/* Заголовки карточек с нашей палитрой */
+.card-header.bg-primary.text-white {
+  background-color: var(--color-primary) !important;
+  color: #fff !important;
+}
+.card-header.bg-success.text-white {
+  background-color: var(--color-dark) !important;
+  color: #fff !important;
+}
+.card-header.bg-info.text-white {
+  background-color: var(--color-light) !important;
+  color: #1a1a1a !important;
+}
+.card-header.bg-secondary.text-white {
+  background-color: var(--color-medium) !important;
+  color: #fff !important;
+}
+.card-header.bg-warning.text-dark {
+  background-color: var(--color-light) !important;
+  color: #1a1a1a !important;
+}
+
+/* Вкладки */
+.nav-tabs .nav-link.active {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: #fff !important;
+}
+.nav-tabs .nav-link:hover {
+  border-color: var(--color-light);
+  color: var(--color-primary);
+}
+
+/* Карточки */
+.card {
+  border-color: var(--color-light);
+  background-color: #fff;
+}
+
+/* Progress bar */
+.progress {
+  background-color: var(--color-light);
+}
+.progress-bar {
+  background-color: var(--color-primary);
+}
+
+/* Alerts */
+.alert-info {
+  background-color: var(--color-light);
+  border-color: var(--color-medium);
+  color: #1a1a1a;
+}
+.alert-success {
+  background-color: rgba(104, 120, 100, 0.2);
+  border-color: var(--color-dark);
+  color: #1a1a1a;
+}
+.alert-primary {
+  background-color: rgba(49, 112, 142, 0.2);
+  border-color: var(--color-primary);
+  color: #1a1a1a;
+}

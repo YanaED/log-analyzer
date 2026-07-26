@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+
+# Runtime / generated
+*.log
+exports/
+logs_backup.json
+
+# Local test helpers
+test_*.py
+
+# Documents and data (не код проекта)
+*.pdf
+*.docx
+*.xlsx
+*.csv
+*.json
+!requirements.txt
+!package*.json
+
+# Misc local notes
+описание_реализации.*
+текст_слайдов*
+GIT_*.md
+текст для кода/
+работа/
+scripts/
